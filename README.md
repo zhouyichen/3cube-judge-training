@@ -1,1 +1,1 @@
-# 3cube-judge-training
+# Judge Training Slides for Signapore 333 Cube Competition 2016
