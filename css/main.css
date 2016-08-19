@@ -1,0 +1,29 @@
+.dnf {
+	color : OrangeRed;
+}
+
+.dns {
+	color : PaleVioletRed;
+}
+
+.p2 {
+	color : yellow;
+}
+
+.keyword {
+	color : MediumTurquoise;
+	text-decoration: underline
+}
+
+p {
+	text-align: justify;
+}
+
+.reveal li {
+	font-size: 90%;
+	text-align: justify;
+}
+
+.small{
+	font-size: 80% !important;
+}
