@@ -1,7 +1,7 @@
 var slides = [
 	{
 		title : [
-			"Singapore Cubewerkz Open 2016",
+			"Singapore 333 Cube Competition",
 			"Judge Training",
 		],
 	},
@@ -11,7 +11,8 @@ var slides = [
 			"Average of 5: For each event, the competitors are allotted 5 attempts. Of these 5 attempts, \
 			the best and worst attempts are removed, \
 			and the arithmetic mean of the remaining 3 attempts counts for the competitor’s ranking in the round.",
-			"(Scrambler scrambles the puzzle,<br>then competitor solves the puzzle) -- Repeat for 5 times"
+			"(Scrambler scrambles the puzzle,<br>then competitor solves the puzzle) -- Repeat for 5 times",
+			a("Events descriptions", "http://nusmathsoc.org/AY1617/3cube/#events"),
 		]
 	},
 	{
@@ -26,10 +27,11 @@ var slides = [
 	{
 		title : ["Step 2: Call the competitor"],
 		contents : [
-			"Call the NO. on the scoresheet. The competitor may choose any vacant seat",
-			"Or you can choose the table first, and put the puzzle covered by the cover on the table\
-			<br> Then call the competitor to come to the table",
-			"If no response, try to call the name"
+			"Call the NO. on the scoresheet,<br>\
+			If no response, try to call the name.",
+			"Wait near the stages when all seats are occupied.<br>\
+			ALWAYS cover the cube so that no one can see it.",
+			"When one of the other competitor comes down from the stage, go to that station together with the competitor."
 		]
 	},
 	{
@@ -224,14 +226,10 @@ var slides = [
 		title: ["Step 6: Check the puzzle"],
 		contents : [
 			"For each two adjacent parts (e.g. two parallel, adjacent slices of a cube) of the puzzle that are misaligned " + 
-			keyword("more than") + unorderdList([
-				"NxNxN puzzles: 45 degrees.",
-				"Pyraminx and Skewb: 60 degrees.",
-			]),
-			"the puzzle is considered to require " + keyword("one additional move") +" to solve",
+			keyword(" more than 45 degrees") +
+			", the puzzle is considered to require " + keyword("one additional move") +" to solve",
 			"If one move is required, the puzzle is be considered solved with a" + p2(),
 			"If more than one move is required, the puzzle is considered unsolved" + dnf(),
-			
 		]
 	},
 	{
@@ -292,15 +290,6 @@ var slides = [
 			"(the result for the remaining three attempts should be " + keyword("left as empty") + ")",
 			"If at least one of the final results is within the cutoff time for the event, \
 			the competitor is qualified for the remaining attempts."
-		]
-	},
-	{
-		title : ["One-Handed"],
-		contents : [
-			"During the solve, the competitor must use only one hand to touch the puzzle." + dnf(),
-			"Once a competitor touches the puzzle with one hand, they must not touch the puzzle with the other hand." + dnf(),
-			"If a puzzle defect occurs, and the competitor chooses to repair it, they must repair it using only the solving hand." + dnf(),
-			"The competitor may use both hands during inspection."
 		]
 	},
 	{
@@ -373,7 +362,8 @@ var slides = [
 		contents : [
 			"The competitor stops the attempt by releasing the puzzle and then stopping the timer.",
 			"If the competitor is not touching the puzzle, they may remove the blindfold before they stop the timer.\
-			They must not touch the puzzle until the end of the attempt." + dnf()
+			They must not touch the puzzle until the end of the attempt." + dnf(),
+			a("Example video", "https://youtu.be/mCyYPimImyM")
 		]
 	},
 	{
