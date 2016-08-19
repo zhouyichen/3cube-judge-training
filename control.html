@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Judge Training</title>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<style>
+			h1   {font-size : 200px;}
+		</style>
+		<!--[if lt IE 9]>
+		<script src="../lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		<h1 onclick="push('previous')">
+			PREVIOUS
+		</h1>
+		<h1 onclick="push('next')">
+			NEXT
+		</h1>
+		<script>
+			function push(action) {
+				$.ajax({
+					type: 'POST',
+					url: 'php/control.php',
+					data: {
+						cmd : 'push',
+						action : action
+					},
+					success: function(data) {
+						console.log(data);
+					}
+				});
+			}
+		</script>
+
+	</body>
+</html>

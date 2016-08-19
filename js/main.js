@@ -81,3 +81,29 @@ function p2() {
 function keyword(word) {
 	return htmlElement("b", word, "keyword");
 }
+
+$(function() {
+	var interval = 1000;
+	window.setInterval(function(){
+		$.ajax({
+			type: 'POST',
+			url: 'php/control.php',
+			data: {
+				cmd : 'retrieve'
+			},
+			success: function(data) {
+				console.log(data);
+				if (data != 'pending') {
+					interval = 5000;
+					if (data == 'next') {
+						Reveal.next();
+					} else {
+						Reveal.prev();
+					}
+				} else {
+					interval = 1000;
+				}
+			}
+		});
+	}, interval);
+});
