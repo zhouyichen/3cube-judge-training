@@ -319,6 +319,7 @@ var slides = [
 	{
 		title : ["Blindfolded"],
 		contents : [
+			"Put the puzzle with the cover on a table, then find the competitor using the scoresheet without talking",
 			"The competitor supplies their own blindfold. <br>The judge should check the blindfold",
 			keyword("There is NO inspection period.")
 		]
